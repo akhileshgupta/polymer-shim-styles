@@ -1,0 +1,12 @@
+{
+  "name": "shim-stylesheet",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.21"
+  },
+  "dependencies": {
+    "fstream": "~0.1.24",
+    "css-parse": "~1.7.0",
+    "css-stringify": "~1.4.1"
+  }
+}
