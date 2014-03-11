@@ -20,7 +20,7 @@ var shimRules = function(origRules) {
       for (var idx in rule.selectors) {
         var selector = rule.selectors[idx];
         // No need for selector if the selector is body or html
-        rule.selectors[idx] = (selector === 'body' || selector === 'html') ? ':scope' : (':scope ^^ ' + selector);
+        rule.selectors[idx] = (selector === 'body' || selector === 'html') ? ':scope' : (':scope /shadow-deep/ ' + selector);
         polyfillRule.comment += (rule.selectors[idx].replace(':scope', ':host') + ", ");
       }
 
